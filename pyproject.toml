@@ -1,14 +1,18 @@
 [tool.poetry]
 name = "ctlogging"
 version = "0.1.0"
-description = ""
-authors = ["Rohit Choudhary <rohit.choudhary@magicfinserv.com>"]
+description = "Wrapper of Logging module for handling database and middlerware scenarios"
+authors = ["Rohit Choudhary <rohitchoudhary19398@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+mysql-connector-python = "^8.0.28"
+PyYAML = "^6.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+fastapi = "^0.74.0"
+uvicorn = "^0.17.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
