@@ -8,7 +8,7 @@ if TYPE_CHECKING:
 
 
 class CorrelationId(Filter):
-    def filter(self, record: 'LogRecord') -> bool:
+    def filter(self, record: "LogRecord") -> bool:
         """
         Attach a correlation ID to the log record.
 
@@ -20,4 +20,3 @@ class CorrelationId(Filter):
         cid = correlation_id.get()
         record.correlation_id = cid  # type: ignore[attr-defined]
         return True
-

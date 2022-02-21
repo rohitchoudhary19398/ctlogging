@@ -3,6 +3,14 @@ name = "ctlogging"
 version = "0.1.0"
 description = "Wrapper of Logging module for handling database and middlerware scenarios"
 authors = ["Rohit Choudhary <rohitchoudhary19398@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rohitchoudhary19398/ctlogging"
+repository = "https://github.com/rohitchoudhary19398/ctlogging"
+keywords = ["logging", "uuid", "middleware", "dbhandler"]
+include = [
+    "LICENSE",
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -13,6 +21,8 @@ PyYAML = "^6.0"
 pytest = "^5.2"
 fastapi = "^0.74.0"
 uvicorn = "^0.17.5"
+black = "^22.1.0"
+flake8 = "^4.0.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
