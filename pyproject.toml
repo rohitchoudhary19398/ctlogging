@@ -9,7 +9,7 @@ homepage = "https://github.com/rohitchoudhary19398/ctlogging"
 repository = "https://github.com/rohitchoudhary19398/ctlogging"
 keywords = ["logging", "uuid", "middleware", "dbhandler"]
 include = [
-    "LICENSE",
+    "LICENSE", "README.md"
 ]
 
 [tool.poetry.dependencies]
