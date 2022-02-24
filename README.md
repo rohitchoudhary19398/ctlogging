@@ -15,7 +15,7 @@ Using pip
 
 Using poetry
  
-`poetry ctlogging`
+`poetry add ctlogging`
 
 
 ## 2. How to use
