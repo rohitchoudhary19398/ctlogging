@@ -1,4 +1,4 @@
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 
 from ctlogging.filters import CorrelationId
 from ctlogging.handlers import MysqlHandler
