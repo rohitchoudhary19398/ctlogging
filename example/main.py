@@ -1,7 +1,9 @@
 import time
-from ctlogging.config import set_logger_from_yaml
+from ctlogging.config import set_logger_from_yaml, addLoggingLevel
 from ctlogging.context import correlation_id
 from uuid import uuid4
+
+addLoggingLevel("SUBDEBUG", 15)
 
 
 class Pipeline:
@@ -10,7 +12,7 @@ class Pipeline:
 
     def f1(self):
         time.sleep(1)
-        self.logger.info("in f1 function")
+        self.logger.subdebug("in f1 function")
 
     def f2(self, uuid):
         correlation_id.set(uuid4().hex)
@@ -22,4 +24,4 @@ class Pipeline:
 if __name__ == "__main__":
     lf = r"example/log.yaml"
     de = Pipeline(lf)
-    de.f2()
+    de.f2("Sd")
