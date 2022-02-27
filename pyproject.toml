@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ctlogging"
-version = "0.1.1"
+version = "0.1.2"
 description = "Wrapper of Logging module for handling database and middlerware scenarios"
 authors = ["Rohit Choudhary <rohitchoudhary19398@gmail.com>"]
 license = "MIT"
