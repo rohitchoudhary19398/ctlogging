@@ -1,21 +1,19 @@
 [tool.poetry]
 name = "ctlogging"
-version = "0.1.2.1"
+version = "0.1.3"
 description = "Wrapper of Logging module for handling database and middlerware scenarios"
 authors = ["Rohit Choudhary <rohitchoudhary19398@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/rohitchoudhary19398/ctlogging"
 repository = "https://github.com/rohitchoudhary19398/ctlogging"
-keywords = ["logging", "uuid", "middleware", "dbhandler"]
+keywords = ["logging", "uuid", "middleware", "dbhandler", "corelationid"]
 include = [
     "LICENSE", "README.md"
 ]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-mysql-connector-python = "^8.0.18"
-PyYAML = "^5.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -23,6 +21,9 @@ fastapi = "^0.74.0"
 uvicorn = "^0.17.5"
 black = "^22.1.0"
 flake8 = "^4.0.1"
+pyodbc = "^4.0.32"
+mysql-connector-python = "^8.0.18"
+PyYAML = "^5.3.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

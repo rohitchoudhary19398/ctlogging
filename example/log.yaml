@@ -19,17 +19,17 @@ handlers:
     maxBytes: 3000000
     backupCount: 3
     filters: [correlation_id]
-  db:
+  Mysqldb:
     class : ctlogging.MysqlHandler
     level: DEBUG
-    host: localhost
-    database: ares
-    user: root
-    password: root
-    port: 3306
+    conn_str: "host=localhost;database=ares;user=root;password=root;port=3306"
+  Mssqldb:
+    class : ctlogging.MssqlHandler
+    level: DEBUG
+    conn_str: 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=MPL-DZRQ0Z2;DATABASE=Ares;UID=root;PWD=root'
 loggers:
   DataExtractor:
     level: DEBUG
-    handlers: [console, db]
+    handlers: [console, Mysqldb, Mssqldb]
     propagate: true
 root_logger_name: DataExtractor

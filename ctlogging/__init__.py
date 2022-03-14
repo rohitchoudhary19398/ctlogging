@@ -1,6 +1,6 @@
-__version__ = "0.1.2.1"
+__version__ = "0.1.3"
 
 from ctlogging.filters import CorrelationId
-from ctlogging.handlers import MysqlHandler
+from ctlogging.handlers import MysqlHandler, MssqlHandler
 
-__all__ = ("CorrelationId", "MysqlHandler")
+__all__ = ("CorrelationId", "MysqlHandler", "MssqlHandler")
